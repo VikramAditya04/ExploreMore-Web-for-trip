@@ -21,11 +21,58 @@
         <div class="nav-options">
             <ul>
                 <li><a href="index.html" style="opacity: 1;">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
+                <li><a href="#explore-more">Explore</a></li>
                 <li><a href="ticket.html">Ticket</a></li>
-                <li><a href="activity.html">Activity</a></li>
+                <li id="about-me"><a class="about-me-btn" href="#about-me">About</a></li>
             </ul>
         </div>
+
+        <div class="about">  
+            <i class="close-btn">×</i>
+            
+            <div class="about-section">
+                <div class="about-header">
+                    <h1>About ExploreMore</h1>
+                    <p>
+                    Welcome to <strong>ExploreMore</strong>, your ultimate trip-planning and
+                    booking companion! At ExploreMore, we believe that every journey has the
+                    power to inspire, educate, and create memories that last a lifetime.
+                    </p>
+                </div>
+                <div class="features">
+                  <div class="feature-card">
+                    <h3>Personalized Recommendations</h3>
+                    <p>
+                      Get tailored suggestions to match your travel style and preferences.
+                    </p>
+                  </div>
+                  <div class="feature-card">
+                    <h3>Hassle-Free Planning</h3>
+                    <p>
+                      Compare destinations, find budget-friendly options, and book
+                      everything in one place.
+                    </p>
+                  </div>
+                  <div class="feature-card">
+                    <h3>Trusted Partners</h3>
+                    <p>
+                      Collaborations with reliable travel services ensure a seamless
+                      experience.
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="call-to-action">
+                  <h2>Start Your Journey Today</h2>
+                  <button onclick="redirectToHome()">Explore More</button>
+                </div>
+              </div>
+          
+              <!-- <div class="about-footer">
+                <p>© 2024 ExploreMore. All rights reserved.</p>
+              </div> -->
+        </div> 
+
         <div class="login-sign">
             <ul>
                 <li><a href="login.html">Login</a></li>
@@ -56,7 +103,8 @@
                 <li><a href="#">Last Searching  ></a></li>
             </ul>
             </div>
-            <div class="line"><p></p></div>
+            <div class="line"></div>
+
             <div class="service-detail">
                 <div class="hotels">
                     <div class="hotels-details">
@@ -109,7 +157,6 @@
                 
             </div>
         </div>
-        // <!-- Popular Place Card 1 -->
     </div>
 
     <div class="mem-title">
@@ -120,71 +167,184 @@
     <div class="memories">
         
         <div class="mem-container">
+            <div class="meme-quote-half">
 
-            <div class="mem-quote">
-                <div class="quote-card">
-                    <div class="quote-number" style="background-color: #6bd1e2;">01</div>
-                    <div class="qoute-content">
-                        <h3>Find trips that fit your freedom</h3>
-                        <p>Travelling offers freedom and flexibility, solitude and spontaneity, and privacy and purpose.</p>
+                <div class="mem-quote">
+                    <div class="quote-card">
+                        <div class="quote-number" style="background-color: #6bd1e2;">01</div>
+                        <div class="qoute-content">
+                            <h3>Find trips that fit your freedom</h3>
+                            <p>Travelling offers freedom and flexibility, solitude and spontaneity, and privacy and purpose.</p>
+                        </div>
+                    </div>
+                
+                    <div class="quote-card">
+                        <div class="quote-number" style="background-color: #e1b7e1;">02</div>
+                        <div class="qoute-content">
+                            <h3>Get back to nature by travel</h3>
+                            <p>The world is a playground and you can finally explore Mother Nature’s inimitable canvas.</p>
+                        </div>
+                    </div>
+                
+                    <div class="quote-card">
+                        <div class="quote-number" style="background-color: #89e989;">03</div>
+                        <div class="qoute-content">
+                            <h3>Reignite those travel tastebuds</h3>
+                            <p>There are infinite reasons to love travel, one of them being the food, glorious food.</p>
+                        </div>
+                    </div>
+            
+                <button class="explore-button" id="explore-btn">Start your explore</button>
+            </div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="landscape-half2">
+
+            <div class="landscape-container">
+                <div class="landscape-image">
+                    <img src="/Photos/Landscape.avif" alt="Mountain Landscape">
+                </div>
+            
+                <div class="profile-badge profile-1">
+                    <img src="/Photos/Vikram.jpg" alt="Vikram Aditya">
+                    <div class="profile-info">
+                        <p>Vikram Aditya</p>
+                        <span>⭐ 4.9</span>
                     </div>
                 </div>
             
-                <div class="quote-card">
-                    <div class="quote-number" style="background-color: #e1b7e1;">02</div>
-                    <div class="qoute-content">
-                        <h3>Get back to nature by travel</h3>
-                        <p>The world is a playground and you can finally explore Mother Nature’s inimitable canvas.</p>
+                <div class="profile-badge profile-2">
+                    <img src="/Photos/Profile photo.jpg" alt="Haikal Adam">
+                    <div class="profile-info">
+                        <p>Haikal Adam</p>
+                        <span>⭐ 4.8</span>
                     </div>
                 </div>
-            
-                <div class="quote-card">
-                    <div class="quote-number" style="background-color: #89e989;">03</div>
-                    <div class="qoute-content">
-                        <h3>Reignite those travel tastebuds</h3>
-                        <p>There are infinite reasons to love travel, one of them being the food, glorious food.</p>
+         
+                <div class="profile-badge profile-3">
+                    <img src="/Photos/Profile photo2.jpg" alt="Joe Zefrano">
+                    <div class="profile-info">
+                        <p>Joe Zefrano</p>
+                        <span>⭐ 4.9</span>
                     </div>
                 </div>
-        
-            <button class="explore-button">Start your explore</button>
-        </div>
-        </div>
-        
-        <div class="landscape-container">
-            <div class="landscape-image">
-                <img src="/Photos/Landscape.jpg" alt="Mountain Landscape">
             </div>
-        
-            <!-- Profile 1 -->
-            <div class="profile-badge profile-1">
-                <img src="/Photos/Vikram.jpg" alt="Vikram Aditya">
-                <div class="profile-info">
-                    <p>Vikram Aditya</p>
-                    <span>⭐ 4.9</span>
-                </div>
-            </div>
-        
-            <!-- Profile 2 -->
-            <div class="profile-badge profile-2">
-                <img src="/Photos/Profile photo.jpg" alt="Haikal Adam">
-                <div class="profile-info">
-                    <p>Haikal Adam</p>
-                    <span>⭐ 4.8</span>
-                </div>
-            </div>
-        
-            <!-- Profile 3 -->
-            <div class="profile-badge profile-3">
-                <img src="/Photos/Profile photo2.jpg" alt="Joe Zefrano">
-                <div class="profile-info">
-                    <p>Joe Zefrano</p>
-                    <span>⭐ 4.9</span>
-                </div>
-            </div>
+
         </div>
         
     
     </div>
+
+    <div class="explore-more" id="explore-more">
+        <div class="explore-more-container">
+            <div class="popular-heading">
+                <div class="head-child">
+                    <h1>Explore more</h1>
+                    <p style="font-size: 1rem;">Let's go an adventure</p>
+                </div>
+                <div class="head-child">
+                    <p>All-inclusive vacations and flights to the Caribbean, Indonesian, and more than 1,300 destinations worldwide. Let's explore now.</p>
+                </div>
+            </div>
+
+            
+            <div class="category-buttons">
+                <button data-category="all" class="active">All Popular Destinations</button>
+                <button data-category="islands">Islands</button>
+                <button data-category="historical">Historical</button>
+                <button data-category="religious">Religious</button>
+                <button data-category="beach">Beaches</button>
+                <button data-category="mountain">Mountains</button>
+                <button data-category="desert">Deserts</button>
+                <button data-category="waterfall">Waterfalls</button>
+                <button data-category="Famous-city">Famous Cities</button>
+                
+                <div class="filter-btn">Filters<i class="fa-solid fa-sliders"></i></div>
+            
+
+              </div>
+            
+              <!-- Card Container -->
+              <div class="card-container" id="data-destination">
+                <!-- Cards will be dynamically inserted here -->
+              </div>  
+                <button onclick="" class="show-more" id="show-more-button">Show More</button>
+                
+            </div>
+        </div>
+        
+        <footer>  
+            <div class="footer-container">  
+                <div class="footer-about">
+                    <div style="margin-left: 0; cursor: pointer;" class="logo">ExploreMore</div>
+                    <div class="adress"> 
+                        <p>Knowledge Park 2,<br> Greater Noida,<br>Uttar Pradesh, India</p>
+                    </div>  
+                      
+                    <div class="social-icons">  
+                        <i class="fa-brands fa-facebook"></i>  
+                        <i class="fa-brands fa-instagram"></i>  
+                        <i class="fa-brands fa-twitter"></i> 
+                        <i class="fa-brands fa-youtube"></i> 
+                    </div>  
+                </div>  
+                
+                <div class="footer-links">  
+                    <h3>About</h3>  
+                    <ul>  
+                        <li><a href="#">About us</a></li>  
+                        <li><a href="#">Features</a></li>  
+                        <li><a href="#">News</a></li>  
+                        <li><a href="#">Plans</a></li>  
+                    </ul>  
+                </div>  
+        
+                <div class="footer-links">  
+                    <h3>Company</h3>  
+                    <ul>  
+                        <li><a href="#">Why ExploreMore</a></li>  
+                        <li><a href="#">Partner with us</a></li>  
+                        <li><a href="#">FAQ</a></li>  
+                        <li><a href="#">Blog</a></li>  
+                    </ul>  
+                </div>  
+        
+                <div class="footer-links">  
+                    <h3>Support</h3>  
+                    <ul>  
+                        <li><a href="#">Account</a></li>  
+                        <li><a href="#">Support center</a></li>  
+                        <li><a href="#">Feedback</a></li>  
+                        <li><a href="#">Contact us</a></li>  
+                    </ul>  
+                </div>  
+        
+                <div class="footer-newsletter">  
+                    <h3>Newsletter</h3>  
+                    <p>Subscribe to our newsletter and get exciting offers</p>
+                    <div class="enter-mail">
+                        <input type="email" placeholder="Enter your email address">  
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>  
+                    
+            </div> 
+        </footer>
+
+            <div class="copyright-container">
+                <div class="f-line">
+                    <div class="line"></div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Vikram Aditya</p>
+                </div>
+            </div>
+        
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
