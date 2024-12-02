@@ -349,7 +349,7 @@ select{
   background: #007BFF;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   cursor: pointer;
   margin-top: 20px;
 }
