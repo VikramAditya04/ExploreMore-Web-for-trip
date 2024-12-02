@@ -2,6 +2,28 @@
 function redirectToHome() {
     window.location.href = "#explore-more";
 }
+// handle to booking category tabs click
+const tabs = document.querySelectorAll('.tab');
+    const forms = document.querySelectorAll('.form-container');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        tabs.forEach(t => t.classList.remove('active'));
+        // Add active class to the clicked tab
+        tab.classList.add('active');
+
+        // Show the corresponding form
+        const category = tab.getAttribute('data-category');
+        forms.forEach(form => {
+          form.classList.remove('active');
+          if (form.getAttribute('data-category') === category) {
+            form.classList.add('active');
+          }
+        });
+      });
+    });
+
 const places = [
   {
     title: "Beach",

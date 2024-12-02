@@ -577,19 +577,46 @@ const destinations = [
       },
   ];
   
-  const urlParams = new URLSearchParams(window.location.search);
-  const name = urlParams.get('name');
-  
-  const destination = destinations.find((dest) => dest.name === name);
-  if (destination) {
-    document.getElementById('destination-img').src = destination.img;
-    document.getElementById('destination-name').textContent = destination.name;
-    document.getElementById('destination-location').textContent =
-      destination.location;
-    document.getElementById('destination-price').textContent = destination.price;
-    document.getElementById('destination-rating').textContent =
-      destination.rating;
-  } else {
-    document.body.innerHTML = '<h1>Destination not found</h1>';
-  }
-  
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get('name');
+
+// Find the destination object
+const destination = destinations.find((dest) => dest.name === name);
+
+if (destination) {
+  // Update main section details
+  document.getElementById('destination-img').src = destination.img;
+  document.getElementById('destination-name').textContent = destination.name;
+  document.getElementById('destination-location').textContent = destination.location;
+  document.getElementById('destination-price').textContent = destination.price;
+  document.getElementById('destination-rating').textContent = destination.rating;
+
+  // **Update the name in the whether and Booking section**
+  document.querySelector('.weather-header #destination-name').textContent = `Weather in ${destination.name}`;
+  document.querySelector('.booking-header #destination-name').textContent = `Book a trip to ${destination.name}`;
+
+} else {
+  document.body.innerHTML = '<h1>Destination not found</h1>';
+}
+
+// handle to booking category tabs click
+    const tabs = document.querySelectorAll('.tab');
+    const forms = document.querySelectorAll('.form-container');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        tabs.forEach(t => t.classList.remove('active'));
+        // Add active class to the clicked tab
+        tab.classList.add('active');
+
+        // Show the corresponding form
+        const category = tab.getAttribute('data-category');
+        forms.forEach(form => {
+          form.classList.remove('active');
+          if (form.getAttribute('data-category') === category) {
+            form.classList.add('active');
+          }
+        });
+      });
+    });

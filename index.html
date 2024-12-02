@@ -90,7 +90,7 @@
                 <img src="/Photos/Aeroplane.png" alt="" id="right">
             </div>
         </div>
-        <div class="info">
+        <!-- <div class="info">
             <div class="heading">
                 <ul >
                     <li><a href="#" style="opacity: 1;">Hotels</a></li>
@@ -138,7 +138,138 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <div class="booking-container">
+            <h2>Book your trip now</h2>
+            <!-- Tab Navigation -->
+            <div class="tab-header">
+              <div class="tab active" data-category="flights">
+                <img src="/Photos/Plane.png" alt="Flights">
+                <p>Flights</p>
+              </div>
+              <div class="tab" data-category="hotels">
+                <img src="Photos/Hotels.png" alt="Hotels">
+                <p>Hotels</p>
+              </div>
+              <div class="tab" data-category="trains">
+                <img src="Photos/Train.png" alt="Trains">
+                <p>Trains</p>
+              </div>
+              <div class="tab" data-category="buses">
+                <img src="/Photos/Bus.png" alt="Buses">
+                <p>Buses</p>
+              </div>
+              <div class="tab" data-category="cars">
+                <img src="/Photos/Car2.png" alt="Cars">
+                <p>Cars</p>
+              </div>
+            </div>
+        
+            <!-- Flights Form -->
+            <div class="form-container active" data-category="flights">
+              <div class="form-group">
+                <label for="flight-from">From</label>
+                <input type="text" id="flight-from" placeholder="Enter departure city">
+              </div>
+              <div class="form-group">
+                <label for="flight-to">To</label>
+                <input type="text" id="flight-to" placeholder="Enter destination city">
+              </div>
+              <div class="form-group">
+                <label for="departure-date">Departure</label>
+                <input type="date" id="departure-date">
+              </div>
+              <div class="form-group">
+                <label for="travellers-class">Travellers & Class</label>
+                <select id="travellers-class">
+                  <option>1 Traveller, Economy</option>
+                  <option>2 Travellers, Business</option>
+                </select>
+              </div>
+              <button class="btn-search">Search</button>
+            </div>
+        
+            <!-- Hotels Form -->
+            <div class="form-container" data-category="hotels">
+              <div class="form-group">
+                <label for="hotel-destination">Destination</label>
+                <input type="text" id="hotel-destination" placeholder="Enter city or hotel name">
+              </div>
+              <div class="form-group">
+                <label for="check-in-date">Check-in</label>
+                <input type="date" id="check-in-date">
+              </div>
+              <div class="form-group">
+                <label for="check-out-date">Check-out</label>
+                <input type="date" id="check-out-date">
+              </div>
+              <div class="form-group">
+                <label for="rooms-guests">Rooms & Guests</label>
+                <select id="rooms-guests">
+                  <option>1 Room, 2 Guests</option>
+                  <option>2 Rooms, 4 Guests</option>
+                </select>
+              </div>
+              <button class="btn-search">Search</button>
+            </div>
+        
+            <!-- Trains Form -->
+            <div class="form-container" data-category="trains">
+              <div class="form-group">
+                <label for="train-from">From</label>
+                <input type="text" id="train-from" placeholder="Enter departure station">
+              </div>
+              <div class="form-group">
+                <label for="train-to">To</label>
+                <input type="text" id="train-to" placeholder="Enter destination station">
+              </div>
+              <div class="form-group">
+                <label for="train-date">Travel Date</label>
+                <input type="date" id="train-date">
+              </div>
+              <button class="btn-search">Search</button>
+            </div>
+        
+            <!-- Buses Form -->
+            <div class="form-container" data-category="buses">
+              <div class="form-group">
+                <label for="bus-from">From</label>
+                <input type="text" id="bus-from" placeholder="Enter departure city">
+              </div>
+              <div class="form-group">
+                <label for="bus-to">To</label>
+                <input type="text" id="bus-to" placeholder="Enter destination city">
+              </div>
+              <div class="form-group">
+                <label for="bus-date">Travel Date</label>
+                <input type="date" id="bus-date">
+              </div>
+              <button class="btn-search">Search</button>
+            </div>
+        
+            <!-- Cars Form -->
+            <div class="form-container" data-category="cars">
+              <div class="form-group">
+                <label for="car-pickup-location">Pickup Location</label>
+                <input type="text" id="car-pickup-location" placeholder="Enter pickup location">
+              </div>
+              <div class="form-group">
+                <label for="car-dropoff-location">Dropoff Location</label>
+                <input type="text" id="car-dropoff-location" placeholder="Enter dropoff location">
+              </div>
+              <div class="form-group">
+                <label for="car-pickup-date">Pickup Date</label>
+                <input type="date" id="car-pickup-date">
+              </div>
+              <div class="form-group">
+                <label for="car-dropoff-date">Dropoff Date</label>
+                <input type="date" id="car-dropoff-date">
+              </div>
+              <button class="btn-search">Search</button>
+            </div>
+          </div>
+
     </div>
 
     <div class="popular-place">
