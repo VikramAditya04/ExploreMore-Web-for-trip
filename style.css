@@ -158,14 +158,7 @@ html, body {
     border-bottom: 3px solid #007BFF;
     color: #007BFF;
   }
-  input[type="text"],[type="date"],[type="date"] {
-    border-color: #318CE7;
-    box-shadow: 0 0 5px #318CE7
-  }
-  select{
-    border-color: #318CE7;
-    box-shadow: 0 0 5px #318CE7
-  }
+
   .form-container {
     display: none;
   }
@@ -192,6 +185,11 @@ html, body {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+    input:focus,select:focus{
+    border-color: #318CE7;
+    outline: none;
+    box-shadow: 0 0 5px #318CE7;
+    }
   .btn-search {
     padding: 10px 20px;
     background: #007BFF;
